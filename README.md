@@ -58,6 +58,19 @@ Initialize Linux Mint 20.1
 ## Tips
 - [Enable Google in Firefox](https://www.linuxmint.com/searchengines/anse.php?sen=Google&c=y)
 
+
+## Git
+1. Save the git credintials
+    ```
+    git config --global credential.helper store
+    ```
+
+2. Configure the name and email
+    ```
+    git config --global user.email "<username>@gmail.com"
+    git config --global user.name "Gobinath Loganathan"
+    ```
+
 ## NeoVim
 1. Set the default vim
     ```bash

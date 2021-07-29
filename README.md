@@ -57,3 +57,69 @@ Initialize Linux Mint 20.1
 
 ## Tips
 - [Enable Google in Firefox](https://www.linuxmint.com/searchengines/anse.php?sen=Google&c=y)
+
+## NeoVim
+1. Set the default vim
+    ```bash
+    alias vim="nvim"
+    alias vi="nvim"
+    ```
+
+## Zsh
+1. Set the default shell
+
+    ```
+    chsh -s $(which zsh)
+    ```
+
+    Restart the terminal
+
+2. Install Oh My Zsh
+
+    ```
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+
+3. Change the theme
+
+    Install the theme
+    ```
+    git clone https://github.com/jan-auer/zsh-multiline.git ~/.oh-my-zsh/custom/themes/zsh-multiline
+    ```
+
+    Edit the `~/.zshrc` file
+    ```
+    nano ~/.zshrc
+    ```
+
+    Modify the line like this:
+    ```
+    ZSH_THEME="zsh-multiline/multiline"
+    ```
+
+    Append this to the bottom of the file:
+    ```
+    DEFAULT_USER=$USER
+    ```
+
+    Finally activate the theme:
+    ```
+    nano ~/.zshrc
+    ```
+
+4. Install the plugins
+
+    Autocomplete:
+    ```
+    git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+    ```
+
+    Syntax highlighting:
+    ```
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+    ```
+
+    Add them to `~/.zshrc`:
+    ```
+    plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+    ```

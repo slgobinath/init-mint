@@ -54,34 +54,24 @@ sudo apt update
 # ================== INSTALL ==============================
 
 # ----------------- Essential Utilities ------------------------
-sudo apt install curl wget -y
-sudo apt install tilix -y
-sudo apt install fish powerline fonts-powerline -y
-sudo apt install uget aria2 uget-integrator -y
-sudo apt install ulauncher -y
+sudo apt install curl wget tilix fish powerline fonts-powerline ulauncher imagemagick keepassxc xclip ffmpeg -y
 sudo apt install gcalendar -y
 sudo apt install safeeyes -y
-sudo apt install imagemagick -y
-sudo apt install keepassxc -y
 sudo apt install pdftk-java -y
 sudo apt install shutter -y
 # Nemo extensions
 sudo apt install nemo-compare nemo-image-converter -y
 sudo apt install numlockx -y
-sudo apt install xclip -y
 
 # ------------------ Development tools ---------------------
-sudo apt install git -y
-sudo apt install python3-pip -y
+sudo apt install git python3-pip sublime-text -y
 sudo apt install twine -y
 sudo apt install devscripts build-essential lintian dh-python -y
 # Following dependencies are required by Android Studio
 sudo apt install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386 -y
 sudo apt install sqlitebrowser
-sudo apt install sublime-text -y
 
 # --------------------- Players -----------------------------
-sudo apt install ffmpeg -y
 sudo apt install audacious -y
 sudo apt install smplayer smplayer-themes smplayer-skins -y
 

@@ -29,6 +29,10 @@ sudo add-apt-repository ppa:slgobinath/gcalendar -y
 sudo add-apt-repository ppa:slgobinath/safeeyes -y
 # uGet
 sudo add-apt-repository ppa:uget-team/ppa -y
+# Shutter
+sudo add-apt-repository ppa:shutter/ppa -y
+# Fish
+sudo apt-add-repository ppa:fish-shell/release-3 -y
 
 # ------------------- Optional Utilities ------------------
 # Solaar - Logitech utility
@@ -52,7 +56,7 @@ sudo apt update
 # ----------------- Essential Utilities ------------------------
 sudo apt install curl wget -y
 sudo apt install tilix -y
-sudo apt install zsh powerline fonts-powerline -y
+sudo apt install fish powerline fonts-powerline -y
 sudo apt install uget aria2 uget-integrator -y
 sudo apt install ulauncher -y
 sudo apt install gcalendar -y
@@ -60,8 +64,11 @@ sudo apt install safeeyes -y
 sudo apt install imagemagick -y
 sudo apt install keepassxc -y
 sudo apt install pdftk-java -y
+sudo apt install shutter -y
 # Nemo extensions
 sudo apt install nemo-compare nemo-image-converter -y
+sudo apt install numlockx -y
+sudo apt install xclip -y
 
 # ------------------ Development tools ---------------------
 sudo apt install git -y
@@ -80,8 +87,8 @@ sudo apt install smplayer smplayer-themes smplayer-skins -y
 
 # Utilities
 sudo apt install solaar -y
+sudo apt install plank -y
 sudo apt install variety -y
-
 
 # ------------------- Video/Audio Editing -------------
 sudo apt install audacity -y

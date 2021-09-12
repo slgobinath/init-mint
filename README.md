@@ -29,6 +29,7 @@ Initialize Linux Mint 20.1
 - [Ulauncher](https://ulauncher.io/)
 - [gcalendar](https://github.com/slgobinath/gcalendar)
 - [Safe Eyes](https://github.com/slgobinath/SafeEyes)
+- [Shutter](https://shutter-project.org/)
 
 ### Multimedia
 - [Audacity](https://www.audacityteam.org/)
@@ -135,4 +136,33 @@ Initialize Linux Mint 20.1
     Add them to `~/.zshrc`:
     ```
     plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+    ```
+
+## Fish
+1. Set the default shell
+
+    ```
+    chsh -s $(which fish)
+    ```
+
+    Restart the terminal
+
+2. Install [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish)
+
+    ```
+    curl -L https://get.oh-my.fish | fish
+    ```
+
+3. Change the theme
+
+    Install the theme
+    ```
+    omf install agnoster
+    ```
+
+4. Modify the config file `.config/fish/config.fish`
+
+    Show full path
+    ```shell
+    set fish_prompt_pwd_dir_length 0
     ```
